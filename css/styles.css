@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  scroll-behavior: smooth;
+  text-decoration: none !important;
+  overflow-x: hidden !important;
+}
+
+.navBar {
+  padding: 45px 0px 15px 0px;
+  width: 100vw;
+  background-color: #070600;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .navBar {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navBar div {
+    text-align: center;
+  }
+}
+.navBar div a {
+  color: #00FF00;
+  font-size: 1.6rem;
+}
+.navBar div a span {
+  color: #f7f7ff;
+}
+.navBar div a span:hover {
+  color: #a3a3a3;
+}
+.navBar div a:hover {
+  color: #00b000;
+}
+.navBar ul {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .navBar ul {
+    flex-direction: column;
+  }
+}
+.navBar ul li {
+  list-style: none;
+  color: #00FF00;
+  font-size: 1.5rem;
+  padding: 0px;
+}
+@media screen and (max-width: 768px) {
+  .navBar ul li {
+    text-align: center;
+  }
+}
+.navBar ul li a {
+  padding: 0px 15px 0px 15px;
+  color: #00FF00;
+}
+.navBar ul a:hover {
+  color: #00b000;
+}
+.navBar button {
+  background-color: #00FF00;
+  font-size: 1.2rem;
+}
+.navBar button:hover {
+  background-color: #00b000;
+}
+
+.indexBody {
+  background-image: url(/images/index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1d1d1d;
+}
+@media screen and (max-width: 768px) {
+  .indexBody {
+    background-image: url(/images/indexBodyMd.jpg);
+  }
+}
+
+.cardContainter {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0px 30px 0px;
+  flex-wrap: wrap;
+}
+.cardContainter div {
+  display: inline-block;
+  color: #00FF00;
+  background-color: #070600;
+  border: solid 2px #00FF00;
+  width: 262px;
+  height: 700px;
+  padding: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cardContainter div {
+    margin: 50px 0px;
+  }
+}
+.cardContainter div h1 {
+  color: #f7f7ff;
+}
+.cardContainter p {
+  font-size: 1.4rem;
+}
+
+.comprarBody {
+  background-image: url(/images/comprar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1d1d1d;
+}
+.comprarBody .sortingBar {
+  background-color: #070600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.comprarBody .sortingBar a {
+  color: #00FF00;
+  font-size: 1.4rem;
+}
+.comprarBody .sortingBar a:hover {
+  color: #00b000;
+}
+
+.listingHorizontales {
+  display: flex;
+  justify-content: center;
+}
+.listingHorizontales ul {
+  list-style: none;
+  padding: 0px;
+}
+.listingHorizontales .listing {
+  margin: 100px 0px 0px 0px;
+  display: inline-block;
+  background-color: #070600;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 30px;
+  border: 2px solid #00FF00;
+}
+@media screen and (max-width: 576px) {
+  .listingHorizontales .listing {
+    width: 280px;
+    height: 500px;
+    display: block;
+  }
+}
+.listingHorizontales .listing .cardImage {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .listingHorizontales .listing .cardImage img {
+    background-image: url(/images/productoxXL.jpg);
+  }
+}
+.listingHorizontales .CardBody {
+  display: block;
+  margin: auto;
+  grid-column: 2/2;
+  text-align: center;
+  color: #00FF00;
+}
+@media screen and (max-width: 576px) {
+  .listingHorizontales .CardBody {
+    margin: 50px;
+    display: block;
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+.contactoBody {
+  background-color: #070600;
+  background-image: url(/images/contactoBody\ .jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .contactoBody {
+    background-image: url(/images/contactoMd.jpg);
+  }
+}
+
+.contactoArticle {
+  margin: 145px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contactoArticle div {
+  width: 300px;
+  border: 2px solid;
+  background-color: #070600;
+  border: 2px solid #00FF00;
+}
+.contactoArticle div h1 {
+  color: #f7f7ff;
+  font-size: 2rem;
+  margin: 50px 0px 0px 0px;
+}
+.contactoArticle div input {
+  display: block;
+  width: 250px;
+  margin: 25px auto;
+  padding: 5px 0px;
+  text-align: center;
+  color: #00FF00;
+  border: 1px solid #00FF00;
+  background-color: #070600;
+}
+.contactoArticle div input:focus {
+  outline: none;
+}
+.contactoArticle a {
+  border: 2px solid #00FF00;
+  padding: 5px 30px;
+  border-radius: 30px;
+  color: #00FF00;
+}
+.contactoArticle p {
+  padding: 30px 0px 0px 0px;
+  color: #00FF00;
+}
+.contactoArticle p a {
+  border: 0px;
+  padding: 0px;
+  color: #f7f7ff;
+}
+.contactoArticle p a:hover {
+  color: #a3a3a3;
+}
+
+.nosotrosBody {
+  background-color: #070600;
+  background-image: url(images/staff.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer {
+  background-color: #070600;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 12px 0px 0px 10px;
+}
+.footer .footerIcons a:hover {
+  scale: 1.1;
+  color: #a3a3a3;
+  transition-duration: 1s;
+}
+.footer h4 {
+  display: inline-block;
+  color: #f7f7ff;
+  font-size: 1, 5rem;
+  text-align: end;
+}
+.footer a {
+  font-size: 2rem;
+  display: inline-block;
+  color: #f7f7ff;
+  padding: 0px 5px 0px 5px;
+}/*# sourceMappingURL=styles.css.map */
