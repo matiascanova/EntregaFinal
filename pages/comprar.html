@@ -14,19 +14,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link
-      rel="shortcut icon"
-      href="../images/favicon.png"
-      type="image/x-icon"
-    />
-    <script
-      src="https://kit.fontawesome.com/4a5a2f23ab.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/4a5a2f23ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
   <body class="comprarBody">
@@ -58,90 +48,74 @@
     </nav>
     <!-- navBar end -->
 
-    <div class="sortingBar animate__animated animate__slideInDown">
-      <a href="A">Productos A</a>
-      <a href="B">Productos B</a>
+    <div class="sortingBar d-flex justify-content-around animate__animated animate__slideInDown">
+      <a href="comprar.html#A">Productos A</a>
+      <a href="comprar.html#B">Productos B</a>
     </div>
 
-    <section id="A" class="listingHorizontales animate__animated animate__slideInLeft animate__slow">
-      <ul>
-        <li>
-          <div class="listing">
-            <div class="cardImage">
-              <img src="/images/productox.jpg" alt="" />
-            </div>
-            <div class="CardBody">
-              <h2 class="py-2 text-light">Producto A</h2>
-              <h4>Información del producto A</h4>
-            </div>
-          </div>
-        </li>
 
-        <li>
-          <div class="listing">
-            <div class="cardImage">
-              <img src="/images/productox.jpg" alt="" />
-            </div>
-            <div class="CardBody">
-              <h2 class="py-2 text-light">Producto A</h2>
-              <h4>Información del producto A</h4>
-            </div>
-          </div>
-        </li>
+    <div class="containter d-flex flex-column align-items-center">
 
-        <li>
-          <div class="listing">
-            <div class="cardImage">
-              <img src="/images/productox.jpg" alt="" />
-            </div>
-            <div class="CardBody">
-              <h2 class="py-2 text-light">Producto A</h2>
-              <h4>Información del producto A</h4>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+      <div class="row listing">
+        <div id="A" class="col-5 px-0 cardImage">
+          <img src="/images/productox.jpg" alt="" />
+        </div>
+        <div class="col-7 green text-center py-5 cardText">
+          <h2 class="py-2 text-light ">Producto A</h2>
+          <h4>Información del producto A</h4>
+        </div>
+      </div>
 
-    <section id="B" class="listingHorizontales">
-      <ul>
-        <li>
-          <div class="listing">
-            <div class="cardImage">
-              <img src="/images/productox.jpg" alt="" />
-            </div>
-            <div class="CardBody">
-              <h4>Producto B</h4>
-              <p>Informacion del producto B</p>
-            </div>
-          </div>
-        </li>
+      <div class="row listing">
+        <div class="col-5 px-0 cardImage">
+          <img src="/images/productox.jpg" alt="" />
+        </div>
+        <div class="col-7 green text-center py-5 cardText">
+          <h2 class="py-2 text-light ">Producto A</h2>
+          <h4>Información del producto A</h4>
+        </div>
+      </div>
 
-        <li>
-          <div class="listing">
-            <div class="cardImage">
-              <img src="/images/productox.jpg" alt="" />
-            </div>
-            <div class="CardBody">
-              <h4>Producto B</h4>
-              <p>Informacion del producto B</p>
-            </div>
-          </div>
-        </li>
+      <div class="row listing">
+        <div class="col-5 px-0 cardImage">
+          <img src="/images/productox.jpg" alt="" />
+        </div>
+        <div class="col-7 green text-center py-5 cardText">
+          <h2 class="py-2 text-light ">Producto A</h2>
+          <h4>Información del producto A</h4>
+        </div>
+      </div>
 
-        <li>
-          <div class="listing">
-            <div class="cardImage">
-              <img src="/images/productox.jpg" alt="" />
-            </div>
-            <div class="CardBody">
-              <h4>Producto B</h4>
-              <p>Informacion del producto B</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
+
+      <div class="row listing">
+        <div id="B" class="col-5 px-0 cardImage">
+          <img src="/images/productox.jpg" alt="" />
+        </div>
+        <div class="col-7 green text-center py-5 cardText">
+          <h2 class="py-2 text-light ">Producto B</h2>
+          <h4>Información del producto B</h4>
+        </div>
+      </div>
+
+      <div class="row listing">
+        <div class="col-5 px-0 cardImage">
+          <img src="/images/productox.jpg" alt="" />
+        </div>
+        <div class="col-7 green text-center py-5 cardText">
+          <h2 class="py-2 text-light ">Producto B</h2>
+          <h4>Información del producto B</h4>
+        </div>
+      </div>
+
+      <div class="row listing mb-5">
+        <div class="col-5 px-0 cardImage">
+          <img src="/images/productox.jpg" alt="" />
+        </div>
+        <div class="col-7 green text-center py-5 cardText">
+          <h2 class="py-2 text-light ">Producto B</h2>
+          <h4>Información del producto B</h4>
+        </div>
+      </div>
 
     <!-- footer Start -->
     <div class="footer animate__animated animate__slideInUp">
@@ -150,9 +124,7 @@
         <a href="#"><i class="fa-brands fa-tiktok"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://github.com/matiascanova?tab=repositories"
-          ><i class="fa-brands fa-github"></i
-        ></a>
+        <a href="https://github.com/matiascanova?tab=repositories"><i class="fa-brands fa-github"></i></a>
       </div>
       <h4>© copyright 2023 - Matías Bruno Cánova</h4>
     </div>

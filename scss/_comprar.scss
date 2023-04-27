@@ -1,0 +1,47 @@
+.comprarBody {
+    background-image: url(/images/comprar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color-light-black;
+
+    .sortingBar {
+        background-color: $color-black;
+        flex-wrap: wrap;
+
+        a {
+            color: $color-green;
+            font-size: 1.4rem;
+        }
+
+        a:hover {
+            color: $color-green-hover;
+        }
+    }
+}
+
+.listing {
+    margin: 100px 0px 0px 0px;
+    background-color: $color-black;
+    width: 700px;
+    border-radius: 30px;
+    border: 2px solid $color-green;
+    overflow-y: hidden;
+
+    @include tablet {
+        width: 280px;
+        height: 500px;
+        display: block;
+
+        .cardImage {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .cardText {
+            width: 100%;
+            display: block;
+            margin: 20px 0px 0px 0px;
+        }
+    }
+}

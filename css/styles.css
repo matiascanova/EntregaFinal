@@ -10,6 +10,10 @@
   overflow-x: hidden !important;
 }
 
+.green {
+  color: #00FF00;
+}
+
 .navBar {
   padding: 45px 0px 15px 0px;
   width: 100vw;
@@ -94,6 +98,7 @@
   flex-wrap: wrap;
 }
 .cardContainter div {
+  overflow-y: hidden;
   display: inline-block;
   color: #00FF00;
   background-color: #070600;
@@ -123,9 +128,7 @@
 }
 .comprarBody .sortingBar {
   background-color: #070600;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 .comprarBody .sortingBar a {
   color: #00FF00;
@@ -135,50 +138,27 @@
   color: #00b000;
 }
 
-.listingHorizontales {
-  display: flex;
-  justify-content: center;
-}
-.listingHorizontales ul {
-  list-style: none;
-  padding: 0px;
-}
-.listingHorizontales .listing {
+.listing {
   margin: 100px 0px 0px 0px;
-  display: inline-block;
   background-color: #070600;
-  width: 500px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 700px;
   border-radius: 30px;
   border: 2px solid #00FF00;
+  overflow-y: hidden;
 }
-@media screen and (max-width: 576px) {
-  .listingHorizontales .listing {
+@media screen and (max-width: 768px) {
+  .listing {
     width: 280px;
     height: 500px;
     display: block;
   }
-}
-.listingHorizontales .listing .cardImage {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (max-width: 576px) {
-  .listingHorizontales .listing .cardImage img {
-    background-image: url(/images/productoxXL.jpg);
+  .listing .cardImage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
-}
-.listingHorizontales .CardBody {
-  display: block;
-  margin: auto;
-  grid-column: 2/2;
-  text-align: center;
-  color: #00FF00;
-}
-@media screen and (max-width: 576px) {
-  .listingHorizontales .CardBody {
-    margin: 50px;
+  .listing .cardText {
+    width: 100%;
     display: block;
     margin: 20px 0px 0px 0px;
   }
@@ -253,6 +233,7 @@
 }
 
 .footer {
+  width: 100vw;
   background-color: #070600;
   display: flex;
   justify-content: space-around;
