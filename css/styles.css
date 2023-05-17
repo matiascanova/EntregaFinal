@@ -80,14 +80,14 @@
 }
 
 .indexBody {
-  background-image: url(/images/index.jpg);
+  background-image: url("../assets/index.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #1d1d1d;
 }
 @media screen and (max-width: 768px) {
   .indexBody {
-    background-image: url(/images/indexBodyMd.jpg);
+    background-image: url(../assets/indexBodyMd.jpg);
   }
 }
 
@@ -121,7 +121,6 @@
 }
 
 .comprarBody {
-  background-image: url(/images/comprar.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #1d1d1d;
@@ -166,13 +165,12 @@
 
 .contactoBody {
   background-color: #070600;
-  background-image: url(/images/contactoBody\ .jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   .contactoBody {
-    background-image: url(/images/contactoMd.jpg);
+    background-image: url(../assets/contactoMd.jpg);
   }
 }
 
@@ -225,15 +223,7 @@
   color: #a3a3a3;
 }
 
-.nosotrosBody {
-  background-color: #070600;
-  background-image: url(images/staff.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .footer {
-  width: 100vw;
   background-color: #070600;
   display: flex;
   justify-content: space-around;
