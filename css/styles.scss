@@ -1,299 +1,305 @@
 $color-black: #070600;
-$color-light-black:#1d1d1d;
+$color-light-black: #1d1d1d;
 $color-green: #00FF00;
 $color-green-hover: #00b000;
 $color-white: #f7f7ff;
 $color-white-hover: #a3a3a3;
 
 @mixin tablet {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin mobile {
-    @media screen and (max-width: 576px) {
-        @content;
-    }
+  @media screen and (max-width: 576px) {
+    @content;
+  }
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
 
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 50;
-    scroll-behavior: smooth;
-    text-decoration: none !important;
-    overflow-x: hidden !important;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;
+  scroll-behavior: smooth;
+  text-decoration: none !important;
+  overflow-x: hidden !important;
 }
 
-.green{
-    color: $color-green;
+.green {
+  color: $color-green;
 }
 
 //navBar
 .navBar {
-    padding: 45px 0px 15px 0px;
-    width: 100vw;
-    background-color: $color-black;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  
+  padding: 45px 0px 15px 0px;
+  width: 100vw;
+  background-color: $color-black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include tablet {
+    display: inline-block;
+  }
+
+  div {
     @include tablet {
-      display: inline-block;
+      text-align: center;
     }
-  
-    div {
+
+    a {
+      color: $color-green;
+      font-size: 1.6rem;
+
+      span {
+        color: $color-white;
+      }
+
+      span:hover {
+        color: $color-white-hover;
+      }
+    }
+
+    a:hover {
+      color: $color-green-hover;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    li {
+      list-style: none;
+      color: $color-green;
+      font-size: 1.5rem;
+      padding: 0px;
+
       @include tablet {
         text-align: center;
       }
-  
+
       a {
+        padding: 0px 15px 0px 15px;
         color: $color-green;
-        font-size: 1.6rem;
-  
-        span {
-          color: $color-white;
-        }
-  
-        span:hover {
-          color: $color-white-hover;
-        }
-      }
-  
-      a:hover {
-        color: $color-green-hover;
       }
     }
-  
-    ul {
-      display: flex;
-  
-      @include tablet {
-        flex-direction: column;
-      }
-  
-      li {
-        list-style: none;
-        color: $color-green;
-        font-size: 1.5rem;
-        padding: 0px;
-  
-        @include tablet {
-          text-align: center;
-        }
-  
-        a {
-          padding: 0px 15px 0px 15px;
-          color: $color-green;
-        }
-      }
-  
-      a:hover {
-        color: $color-green-hover;
-      }
-    }
-  
-    button {
-      background-color: $color-green;
-      font-size: 1.2rem;
-    }
-  
-    button:hover {
-      background-color: $color-green-hover;
+
+    a:hover {
+      color: $color-green-hover;
     }
   }
-  
-  //Index
-  .indexBody {
-    background-image: url('../assets/index.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $color-light-black;
 
-    @include tablet {
-        background-image: url(../assets/indexBodyMd.jpg);
-    }
+  button {
+    background-color: $color-green;
+    font-size: 1.2rem;
+  }
+
+  button:hover {
+    background-color: $color-green-hover;
+  }
+}
+
+//Index
+.indexBody {
+  background-image: url('../assets/index.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $color-light-black;
+
+  @include tablet {
+    background-image: url(../assets/indexBodyMd.jpg);
+  }
 }
 
 
 .cardContainter {
-    display: flex;
-    justify-content: space-around;
-    padding: 100px 0px 30px 0px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0px 30px 0px;
+  flex-wrap: wrap;
 
-    div {
-        overflow-y: hidden;
-        display: inline-block;
-        color: $color-green ;
-        background-color: $color-black ;
-        border: solid 2px $color-green;
-        width: 262px;
-        height: 700px;
-        padding: 10px;
-        text-align: center;
+  div {
+    overflow-y: hidden;
+    display: inline-block;
+    color: $color-green ;
+    background-color: $color-black ;
+    border: solid 2px $color-green;
+    width: 262px;
+    height: 700px;
+    padding: 10px;
+    text-align: center;
 
-        @include tablet {
-            margin: 50px 0px;
-        }
-
-        h1 {
-            color: $color-white;
-        }
+    @include tablet {
+      margin: 50px 0px;
     }
 
-    p {
-        font-size: 1.4rem;
+    h1 {
+      color: $color-white;
     }
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
 }
+
 
 //comprar
 .comprarBody {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $color-light-black;
+  background-image: url('../assets/comprar.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-light-black;
 
-    .sortingBar {
-        background-color: $color-black;
-        flex-wrap: wrap;
+  .sortingBar {
+    background-color: $color-black;
+    flex-wrap: wrap;
 
-        a {
-            color: $color-green;
-            font-size: 1.4rem;
-        }
-
-        a:hover {
-            color: $color-green-hover;
-        }
+    a {
+      color: $color-green;
+      font-size: 1.4rem;
     }
+
+    a:hover {
+      color: $color-green-hover;
+    }
+  }
 }
 
 .listing {
-    margin: 100px 0px 0px 0px;
-    background-color: $color-black;
-    width: 700px;
-    border-radius: 30px;
-    border: 2px solid $color-green;
-    overflow-y: hidden;
+  margin: 100px 0px 0px 0px;
+  background-color: $color-black;
+  width: 700px;
+  border-radius: 30px;
+  border: 2px solid $color-green;
+  overflow-y: hidden;
 
-    @include tablet {
-        width: 280px;
-        height: 500px;
-        display: block;
+  @include tablet {
+    width: 280px;
+    height: 500px;
+    display: block;
 
-        .cardImage {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .cardText {
-            width: 100%;
-            display: block;
-            margin: 20px 0px 0px 0px;
-        }
+    .cardImage {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
+
+    .cardText {
+      width: 100%;
+      display: block;
+      margin: 20px 0px 0px 0px;
+    }
+  }
 }
 
 
 //contacto
 .contactoBody {
+  background-image: url('../assets/contactoBody\ .jpg');
+  background-color: $color-black;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    background-image: url(../assets/contactoMd.jpg);
+  }
+}
+
+.contactoArticle {
+  margin: 145px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  div {
+    width: 300px;
+    border: 2px solid;
     background-color: $color-black;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-    @include tablet {
-      background-image: url(../assets/contactoMd.jpg);
+    border: 2px solid $color-green;
+
+    h1 {
+      color: $color-white;
+      font-size: 2rem;
+      margin: 50px 0px 0px 0px;
     }
-  }
-  
-  .contactoArticle {
-    margin: 145px 0px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  
-    div {
-      width: 300px;
-      border: 2px solid;
+
+    input {
+      display: block;
+      width: 250px;
+      margin: 25px auto;
+      padding: 5px 0px;
+      text-align: center;
+      color: $color-green;
+      border: 1px solid $color-green;
       background-color: $color-black;
-      border: 2px solid $color-green;
-  
-      h1 {
-        color: $color-white;
-        font-size: 2rem;
-        margin: 50px 0px 0px 0px;
-      }
-  
-      input {
-        display: block;
-        width: 250px;
-        margin: 25px auto;
-        padding: 5px 0px;
-        text-align: center;
-        color: $color-green;
-        border: 1px solid $color-green;
-        background-color: $color-black;
-      }
-  
-      input:focus {
-        outline: none;
-      }
     }
-  
-    a {
-      border: 2px solid $color-green;
-      padding: 5px 30px;
-      border-radius: 30px;
-      color: $color-green;
-    }
-  
-    p {
-      padding: 30px 0px 0px 0px;
-      color: $color-green;
-  
-      a {
-        border: 0px;
-        padding: 0px;
-        color: $color-white;
-      }
-  
-      a:hover {
-        color: $color-white-hover;
-      }
+
+    input:focus {
+      outline: none;
     }
   }
-  
+
+  a {
+    border: 2px solid $color-green;
+    padding: 5px 30px;
+    border-radius: 30px;
+    color: $color-green;
+  }
+
+  p {
+    padding: 30px 0px 0px 0px;
+    color: $color-green;
+
+    a {
+      border: 0px;
+      padding: 0px;
+      color: $color-white;
+    }
+
+    a:hover {
+      color: $color-white-hover;
+    }
+  }
+}
+
 
 //Footer
 .footer {
-    background-color: $color-black;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 12px 0px 0px 10px;
-    .footerIcons{
+  background-color: $color-black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 12px 0px 0px 10px;
+
+  .footerIcons {
     a:hover {
-        scale: 1.10;
-        color: $color-white-hover;
-        transition-duration: 1s;
-        }
+      scale: 1.10;
+      color: $color-white-hover;
+      transition-duration: 1s;
     }
-    h4{
-        display: inline-block;
-        color: $color-white;
-        font-size: 1,5rem;
-        text-align: end;
-    }
-    a{
-        font-size: 2rem;
-        display: inline-block;
-        color: $color-white;
-        padding: 0px 5px 0px 5px;
-    }
+  }
+
+  h4 {
+    display: inline-block;
+    color: $color-white;
+    font-size: 1, 5rem;
+    text-align: end;
+  }
+
+  a {
+    font-size: 2rem;
+    display: inline-block;
+    color: $color-white;
+    padding: 0px 5px 0px 5px;
+  }
 }

@@ -121,6 +121,7 @@
 }
 
 .comprarBody {
+  background-image: url("../assets/comprar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #1d1d1d;
@@ -164,6 +165,7 @@
 }
 
 .contactoBody {
+  background-image: url("../assets/contactoBody .jpg");
   background-color: #070600;
   background-position: center;
   background-repeat: no-repeat;
